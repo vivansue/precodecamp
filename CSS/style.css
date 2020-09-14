@@ -1,0 +1,211 @@
+.number {
+    font-size: 20px;
+    color: lavender;
+    background-color: midnightblue;
+    padding: 5px;
+}
+
+
+/* external css */
+
+selector {
+    property: value;
+    property: value;
+}
+
+#idName {
+    color: pink;
+}
+
+.className {
+    color: lightskyblue;
+}
+
+
+
+/* pseudo class */
+
+input:checked {
+    width: 30px;
+    height: 30px;
+}
+
+h2:hover {
+    color: yellowgreen;
+}
+
+
+
+/* pseudo element */
+
+h3::before {
+    content: "Hello World!!!";
+}
+
+h3::first-letter {
+    color: tomato;
+}
+
+
+
+/* combinators */
+/* 
+There are four different combinators in CSS:
+1 descendant selector (space)
+2 child selector (>)
+3 adjacent sibling selector (+)
+4 general sibling selector (~) 
+*/
+
+#tagH div {
+    /* div ทั้งหมดที่อยู่ใน tagH */ 
+    /* color: slateblue; */
+}
+
+#tagH span {
+    /* span ทั้งหมดที่อยู่ใน tagH */
+    /* color: purple; */
+}
+
+#tagH > div {
+    /* div ลูกทั้งหมดที่อยู่ใน tahH */
+    /* color: orange; */
+}
+
+p span {
+    /* color: rosybrown; */
+}
+
+p > span {
+    /* color: sandybrown; */
+}
+
+p div {
+    /* color: khaki; */
+}
+
+.plusCombinators + div {
+    /* div พี่น้อง ที่อยู่ด้านล่างตัวเอง เพียงอันเดียว */
+    /* color: steelblue; */
+}
+
+.plusCombinators ~ div {
+    /* div พี่น้อง ที่อยู่ด้านล่างทั้งหมด */
+    /* color: goldenrod; */
+}
+
+
+
+/* attribute selectors */
+/* เน้นเฉพาะบาง attribute */
+
+input[type] {
+    /* attribute ที่เป็น type ทั้งหมด */
+    color: deeppink;
+}
+
+input[type="password"] {
+    /* เฉพาะ attribute ที่เป็น type="password"  */
+    /* background-color: lightpink; */
+}
+
+input[title~="this"] {
+    /* / this something, X this-something, X thissomething, / something this */
+    /* ~=this หมายถึง ใช้ได้เฉพาะ this ที่เป็นคำที่มีช่องว่างข้างหน้าและข้างหลัง ถ้าติดกับสัญลักษณ์หรือตัวอักษรอื่นจะใช้ไม่ได้ */
+    /* background-color: linen; */
+}
+
+input[title^="input"] {
+    /* title มีคำขึ้นต้นด้วย input */
+    /* background-color: rosybrown; */
+}
+
+input[title|="input"] {
+    /* title มีคำขึ้นด้วยด้วย input-  */
+    /* background-color: yellowgreen; */
+}
+
+input[title$="Form"] {
+    /* title ที่มีคำว่า Form อยู่หลังสุด */
+    /* background-color: teal; */
+}
+
+input[title*="this"] {
+    /* title ที่มีคำว่า this */
+    /* background-color: royalblue; */
+}
+
+
+/* TEXT */
+.textAlign {
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: start; */
+    /* text-align: center; */
+    /* text-align: justify; */
+}
+
+.verticalAlign {
+    /* vertical-align: super; */
+    /* vertical-align: sub; */
+}
+
+.textAlign {
+    /* word-spacing: 3mm; */
+}
+
+.textAlign {
+    /* text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: salmon; */
+    
+    /* text-decoration: overline solid goldenrod; */
+}
+
+.textAlign {
+    /* text-indent: 10ch; */
+}
+
+.textDirection {
+    width: 100vw;
+    /* direction: ltr; */
+    /* direction: rtl; */
+    /* if use span cannot use width */
+
+    text-shadow: 10px 10px;
+}
+
+
+
+/* FONT */
+@font-face {
+    font-family: Prompt;
+    src: url(/font/Prompt/Prompt-Regular.ttf);
+}
+
+p {
+   font-family: Prompt;
+   /* font-style: italic; */
+   /* font-weight: bold; */
+   /* font-size: 16px; */
+   /* font-variant: small-caps;  */
+}
+
+
+
+/* LIST */
+ul > li {
+    /* border: solid 1px dimgrey; */
+    /* list-style-type: circle; */
+    /* list-style-position: inside; */
+    /* list-style-image: url(); */
+
+    /* list-style: circle inside url(); */
+}
+
+
+
+
+
+
+

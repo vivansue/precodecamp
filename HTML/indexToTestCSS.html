@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- tag link use for import external css / การนำเข้าไฟล์ css จากภายนอกไฟล์ html -->
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+
+</head>
+<body>
+    
+    <!-- inline css : use for edit style in this tag / การปรับแต่ง css ใน tag -->
+    <h5 class="number">1. INLINE CSS</h5>
+    <h1 style="property: value; property: value; color: lightseagreen;">INLINE CSS</h1>
+    
+
+    <!-- tag style use for import internal css / การใช้ css จากภายในไฟล์ html -->
+    <style>
+        selector {
+            property: value;
+            property: value;
+        }
+
+        .heading {
+            color: darkolivegreen;
+        }
+    </style>
+
+    <h5 class="number">2. INTERNAL CSS</h5>
+    <h1 class="heading">INTERNAL CSS</h1>
+
+
+    <!-- id -->
+    <h5 class="number">3.1 EXTERNAL CSS - ID</h5>
+    <h2 id="idName">this tag have id that is idName / EXTERNAL CSS</h2>
+
+
+    <!-- class -->
+    <h5 class="number">3.2 EXTERNAL CSS - CLASS</h5>
+    <h2 class="className">this tag have class that is className / EXTERNAL CSS</h2>
+
+
+    <!-- pseudo class -->
+    <h5 class="number">4. PSEUDO CLASS</h5>
+    <form class="formCheckbox">
+        <input type="checkbox" checked>PSEUDO CLASS</input>
+        <input type="checkbox">one</input>
+        <input type="checkbox">two</input>
+        <input type="checkbox">three</input>
+    </form>
+
+    <h2>PSEUDO CLASS</h2>
+    
+
+
+    <!-- pseudo element -->
+    <h5 class="number">5. PSEUDO ELEMENT</h5>
+    <h3>PSEUDO ELEMENT</h3>
+    
+
+
+    <!-- combinators -->
+    <h5 class="number">6. COMBINATORS</h5>
+    <h4 id="tagH">
+
+        <div>div 1
+            <div>div 1 - item in tag div</div>
+            <div class="plusCombinators">div 2 - item in tag div / this div have class plusCombinators</div>
+            <div>div 3 - item in tag div</div>
+            <div>div 4 - item in tag div</div>
+            <div>div 5 - item in tag div</div>
+        </div>
+
+        <div>div 2</div>
+        <div>div 3</div>
+        <div>div 4</div>
+        <div>div 5</div>
+
+        <span>span 1</span>
+        <span>span 2</span>
+        <span>span 3</span>
+
+    </h4>
+
+    <div>div 6</div>
+    <div>div 7</div>
+
+    <p>
+        <span>span 1 in tag p</span>
+        <span>span 2 in tag p</span>
+        <span>
+            <span>span 1 in span</span>
+            <span>span 2 in span</span>
+            <span>span 3 in span</span>
+        </span>
+        <div>div in tag p</div>
+    </p>
+
+
+
+    <!-- attribute selectors -->
+    <h5 class="number">7. ATTRIBUTE SELECTORS</h5>
+    <form>
+        <input type="text" title="inputForm"><br/>
+        <input type="color" title="input this-color"><br/>
+        <input type="date" title="input-Form"><br/>
+        <input type="email" title="input_Form"><br/>
+        <input type="file" title="input//Form"><br/>
+        <input type="password" title="input Form"><br/>
+        <input type="search" title="this input search">
+    </form>
+
+
+
+    <!-- TEXT-->
+    <h5 class="number">TEXT</h5>
+
+    <p class="textAlign">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium esse maxime eaque accusantium perferendis quidem repellat libero fugiat rerum, temporibus possimus earum quis aperiam hic officiis eius ducimus odio in.
+        Aperiam vitae, nobis, eum ducimus dolorem blanditiis possimus velit nulla assumenda doloremque veritatis perspiciatis soluta ratione quidem, quasi porro. Non sed ullam, id quod ut molestias quibusdam illo a corporis.
+        <strong class="verticalAlign">Blanditiis possimus eveniet delectus sint adipisci! Cupiditate, non? Reprehenderit perferendis eaque esse, inventore doloremque vitae nisi, mollitia numquam repellendus explicabo similique nostrum amet dolor autem quae maxime dolorem? Voluptates, rem?
+        Fugit error a quod dolore magnam. Ipsam ullam facere molestiae veritatis iusto, quo quaerat, esse enim ut excepturi dolor natus earum eaque impedit error consequatur beatae culpa in laboriosam assumenda.
+        Quam necessitatibus aliquid repudiandae doloribus</strong>, repellendus nulla iste aspernatur voluptatum sunt voluptates ab qui similique culpa veniam, provident ad incidunt natus optio laboriosam quasi quibusdam sapiente ipsum modi eveniet! Totam.
+        Totam itaque reiciendis sint debitis deserunt. Esse sequi hic, fugiat impedit dolorem quae quos aspernatur non earum, expedita, optio perferendis quibusdam consequatur blanditiis sed eius atque quisquam natus! Totam, dignissimos?
+        Voluptate rerum, doloribus magnam, quidem error qui aperiam adipisci consequuntur animi earum in distinctio vel voluptates nobis maiores, optio ad dolore delectus maxime provident! Vitae exercitationem iste optio nostrum aut.
+        Doloribus accusamus et quam ratione amet non quo assumenda modi nisi nobis recusandae dolor saepe, natus corrupti, pariatur deserunt aliquam minima repellendus id quaerat? Fuga recusandae facere repellendus magni omnis.
+        Aliquam, quaerat molestias magnam incidunt harum minus nobis nisi iure voluptatibus possimus animi error natus saepe dolorem alias molestiae dolore, quod similique! Optio nemo quae rerum quibusdam cumque quasi quo.
+        Necessitatibus, autem! Itaque sit facilis maxime optio dolor quo veniam nostrum obcaecati. Ad, odio sint! Hic molestias quis mollitia assumenda in illum neque sapiente accusamus! Laudantium nesciunt voluptatum quas distinctio?
+    </p>
+
+    <div class="textDirection">TEST Text Direction</div>
+    <!-- if use span cannot use width -->
+
+
+
+    <!-- FONT-->
+    <h5 class="number">FONT</h5>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, culpa.</p>
+
+
+
+    <!-- LIST-->
+    <h5 class="number">LIST</h5>
+
+    <ul>Unorder List
+        <li>list I</li>
+        <li>list II</li>
+        <li>list III</li>
+    </ul>
+
+</body>
+</html>
