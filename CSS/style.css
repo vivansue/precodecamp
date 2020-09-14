@@ -241,3 +241,44 @@ th {
 
 
 
+/* IMAGE & BACKGROUND */
+
+img {
+    border: solid hotpink 2px;
+    border-radius: 15px;
+
+    /* ทำวงกลม */
+    /* border-radius: 50%;
+    width: 200px;
+    height: 200px; */
+
+    /* ทำวงรี */
+    /* border-radius: 50%;
+    width: 300px;
+    height: 200px; */
+
+    /* opacity: 0.4; */
+    /* opacity : 0-1; 0 คือ โปร่งแสง, 1 คือ ไม่โปร่งแสง */
+}
+
+.bgTest {
+    width: 30vw;
+    height: 50vh;
+    background-color: skyblue;
+    /* background-image: url(); */
+}
+
+body {
+    /* background-image: url();
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+
+/* PADDING & MARGIN */
+
+
+
+/* DISPLAY */
+
+
