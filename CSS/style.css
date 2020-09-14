@@ -158,7 +158,7 @@ input[title*="this"] {
     /* text-decoration-line: underline;
     text-decoration-style: dotted;
     text-decoration-color: salmon; */
-    
+
     /* text-decoration: overline solid goldenrod; */
 }
 
@@ -205,7 +205,39 @@ ul > li {
 
 
 
+/* BORDER */
+.borderTable {
+    /* width: 100vw; */
+    /* max-width: 650px; */
+    /* property: 650px; */
+    /* max-width: 1000px; */
+    /* height: 100px; */
+    /* border-style: outset; */
+    /* border-radius: 10px; */
+    /* border-width: 10px; */
+    /* border-color: dodgerblue; */
+    /* border: 10px double slateblue; */
+    /* border-top-color: hotpink; */
+    /* border: ; */
+}
 
+
+
+/* TABLE */
+table,
+td,
+th {
+    /* border-collapse: collapse; */
+    border: 1px solid dodgerblue;
+    border-spacing: 20px;
+    empty-cells: hide;
+    /* table-layout: fixed; */
+    /* width: 100%; */
+    /* height: 50px; */
+    /* caption-side: bottom; */
+
+    /* - collapse ไม่สามารถใช้คู่กับคำสั่ง border-spacing และ empty-cells ได้ - */
+}
 
 
 
