@@ -276,9 +276,21 @@ body {
 
 
 /* PADDING & MARGIN */
-
+.paddingMargin {
+    display: inline-block;
+    background-color: thistle;
+    /* padding: 10px; */
+    margin: 30px;
+}
 
 
 /* DISPLAY */
+.pDisplay {
+    display: inline;
+    /* display: contents; */
+    border: 3px solid teal;
+    background-color: tan;
+    font-family: Prompt;
+}
 
 
