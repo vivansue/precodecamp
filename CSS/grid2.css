@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-container {
+    /* width: 500px; */
+
+
+
+    /* === dispaly === */
+
+    display: grid;
+    /* - กว้างเต็มหน้าจอ */
+
+    /* display: inline-grid; */
+    /* - กว้างไม่เต็มหน้าจอ ไม่นิยม */
+
+
+
+    /* === columns & rows === */
+
+    /* grid-template-columns: 1fr 1fr 2fr; */
+    /* grid-template-rows: 50px 100px; */
+    /* - ถ้าใช้ unit เป็น fr จะคำนวณความกว้างให้ auto */
+    /* - สามารถใช้ unit ผสมกันได้ เช่น 3rem 25% 1fr 2fr */
+    /* - ถ้าไม่ได้กำหนด row จะสูงแบบ auto */
+
+
+
+    /* === columns & rows : minmax(min, max) === */
+
+    /* grid-template-columns: minmax(auto, 50%) 200px 3em; */
+    /* grid-template-rows: minmax(100px, auto);  */
+
+
+
+    /* === columns & rows : repeat(จำนวนที่ต้องการให้ทำซ้ำ, ขนาด grid) === */
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: 50px repeat(3, 1fr) 50px; */
+    /* grid-template-rows: repeat(5, 100px); */
+
+
+
+    /* === การตั้งชื่อ grid line === */
+
+    /* grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-3-end];
+    grid-template-rows: [row-start row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end]; */
+
+    grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+    grid-template-rows: repeat(4, [row-start] 100px [row-end]);
+
+
+
+    /* === gap === */
+
+    /* grid-column-gap: 1em; */
+    /* grid-row-gap: 2em; */
+    /* grid-gap: 1em; */
+
+    
+
+    background-color: darkolivegreen;
+    padding: 1em;
+}
+
+
+.grid-items {
+    border: 1px solid seashell;
+}
+
+
+.grid1 {
+    
+    /* === การสลับตำแหน่ง === */
+
+    /* == 1 == */
+    /* grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+
+    /* == 2 == */
+    /* grid-column: [grid-column-start] / [grid-column-end]; */
+    /* grid-column: 3 / 4; */
+    /* grid-row: [grid-row-start] / [grid-row-end]; */
+    /* grid-row: 1 / 2 */
+
+    /* == 3 == */
+    /* grid-area: [grid-row-start] / [grid-column-start] / [grid-row-end] / [grid-column-end]; */
+    /* grid-area: 1 / 3 / 2 / 4; */
+
+
+    /* === การขยายช่อง === */
+
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+
+    /* grid-row-start: 1;
+    grid-row-end: 4; */
+
+    /* grid-column: 2 / 4;
+    grid-row: 2 / 5; */
+
+    /* grid-column: span 2;
+    grid-row: 2 / span 3; */
+
+}
+
+
+/* --------------------------------------- */
+
+
+.grid2-container {
+
+    display: grid;
+
+
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 150px 200px 60px;
+
+    background-color: hotpink;
+    padding: 1em;
+
+}
+
+
+.grid {
+    border: 1px solid snow;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+/* --------------------------------------- */
+
+/* === layering items within a CSS Grid === */
+
+.grid3-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+
+    background-color: steelblue;
+    padding: 1em;
+}
+
+
+.grid2-items {
+    border: 1px solid seashell;
+}
+
+
+.grid1,
+.grid2 {
+    grid-column-end: span 2;
+    grid-row-start: 1;
+}
+
+.grid1 {
+    grid-column-start: 1;
+    z-index: 1;
+    background-color: rgb(154, 205, 50, 0.2);
+}
+
+.grid2 {
+    grid-column-start: 2;
+}
+
+
+
+/* --------------------------------------- */
+
+/* === Box alignment in CSS Grid Layout / การจัดตำแหน่ง === */
+
+.grid4-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 80px;
+
+    grid-template-areas: "content content"
+                         "content content";
+
+    
+    justify-items: stretch;
+    /* center, start, end, stretch */
+
+
+    align-items: ;
+    /* center, start, end, stretch */
+
+    background-color: goldenrod;
+    padding: 1em;
+}
+
+.grid3-item {
+    border: 1px solid black;
+}
+
+.grid-1 {
+    grid-area: content;
+}
